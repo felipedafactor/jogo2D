@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <header class="game-header">
+            <h1>⚔️ Pixel Adventure</h1>
+
+            <div class="hud">
+                <span>⭐ Pontos: <strong id="score">0</strong></span>
+                <span>❤️ Vidas: <strong id="lives">3</strong></span>
+            </div>
+        </header>
+
+        <section class="canvas-wrapper">
+            <canvas id="gameCanvas" width="960" height="540"></canvas>
+
+            <div id="gameMessage" class="game-message hidden">
+                <h2 id="messageTitle">Game Over</h2>
+                <p id="messageText">Você perdeu todas as suas vidas.</p>
+                <button id="restartButton">Jogar novamente</button>
+            </div>
+        </section>
+
+        <section class="instructions">
+            <h2>Como jogar</h2>
+
+            <div class="controls">
+                <span>⬅️ A</span>
+                <span>➡️ D</span>
+                <span>⬆️ W / Espaço</span>
+            </div>
+
+            <p>
+                Colete as moedas ⭐, elimine os inimigos e chegue ao final da fase!
+            </p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
